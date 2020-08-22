@@ -11,5 +11,3 @@ def charCount(inp):
         result[letter] = 1
 
   return result
-
-print(charCount('Hi there'))

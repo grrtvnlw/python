@@ -1,8 +1,8 @@
 inp = int(input('Give me a number: '))
 
-counter = 1
+counter = inp
 
-while counter <= inp:
+while counter > 0:
   isFizz = counter % 3 == 0
   isBuzz = counter % 5 == 0
 
@@ -15,4 +15,4 @@ while counter <= inp:
   else:
     print(int(counter))
   
-  counter += 1
+  counter -= 1

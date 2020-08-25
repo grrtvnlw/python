@@ -3,10 +3,10 @@ def get_coords(player):
   x_move = int(input(f'Give me x coordinate, Player {player}: '))
   return (y_move, x_move)
 
-def print_board(inp):
-  print(inp[0])
-  print(inp[1])
-  print(inp[2])
+def print_board(game_board):
+  print(game_board[0])
+  print(game_board[1])
+  print(game_board[2])
 
 def check_win(board):
   if board[0][0] == 'X' and board[0][1] == 'X' and board[0][2] == 'X':

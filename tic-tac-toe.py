@@ -1,5 +1,3 @@
-board=[['', '', ''], ['', '', ''], ['', '', '']]
-
 def get_coords(player):
   y_move = int(input(f'Give me y coordinate, Player {player}: '))
   x_move = int(input(f'Give me x coordinate, Player {player}: '))
@@ -75,6 +73,8 @@ def move(location, player):
 
 while True:
   play = input('Play tic-tac-toe? y/n ').lower()
+  if play == 'y':
+    board=[['', '', ''], ['', '', ''], ['', '', '']]
   while play == 'y':
     if check_win(board):
       move(get_coords('X'), 'X')
@@ -84,3 +84,5 @@ while True:
         break
     else:
       break
+  else:
+    break
